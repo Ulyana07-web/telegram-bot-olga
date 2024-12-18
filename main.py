@@ -3,7 +3,7 @@ import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, filters, CallbackQueryHandler
 
-BOT_TOKEN = "7885860790:AAFD6OqNf7twNncasYAA4e8ZxIi0qHwx9s4"  # Замените на ваш токен
+application = Application.builder().token(os.environ.get("TOKEN")).build()
 
 
 logging.basicConfig(
